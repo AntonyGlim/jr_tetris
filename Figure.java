@@ -1,7 +1,30 @@
 package com.javarush.task.task22.task2213;
 
 /**
- * фигура
+ * Фигура
+ * Этот класс будет описывать падающую фигурку
  */
 public class Figure {
+
+    private int x;
+    private int y;
+    private int[][] matrix; //отвечает за форму
+
+    public Figure(int x, int y, int[][] matrix) {
+        this.x = x;
+        this.y = y;
+        this.matrix = matrix;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public int[][] getMatrix() {
+        return matrix;
+    }
 }
