@@ -9,6 +9,12 @@ public class Tetris {
 
     }
 
+    /** Будет отвечать за всю игру */
+    public void run(){}
+
+    /** Будет отвечать за один шаг */
+    public void step(){}
+
     public Field getField() {
         return field;
     }
