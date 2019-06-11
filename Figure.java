@@ -27,4 +27,31 @@ public class Figure {
     public int[][] getMatrix() {
         return matrix;
     }
+
+    /** для движения фигурки влево */
+    public void left(){}
+
+    /** для движения фигурки вправо */
+    public void right(){}
+
+    /** для движения фигурки вправо */
+    public void down(){}
+
+    /** для движения фигурки вверх */
+    public void up(){}
+
+    /** для поворота фигурки вокруг главной диагонали */
+    public void rotate(){}
+
+    /** падение фигурки в низ до дна */
+    public void downMaximum(){}
+
+    /** проверка может ли фигурка быть помещена в текущую позицию. */
+    public boolean isCurrentPositionAvailable(){
+        return true;
+    }
+
+    /** вызывается, когда фигурка достигла дна или уперлась в другую фигурку */
+    public void landed(){}
+
 }
