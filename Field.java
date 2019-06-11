@@ -16,6 +16,18 @@ public class Field {
         this.matrix = new int[height][width];
     }
 
+    /** объект будет отрисовывать на экран свое текущее состояние */
+    public void print(){}
+
+    /** будет удалять из матрицы полностью заполненные строки и сдвигать вышележащие строки вниз */
+    public void removeFullLines(){}
+
+    /** возвращает значение которое находится в матрице с координатами x и y */
+    public Integer getValue(int x, int y){return null;}
+
+    /** устанавливает переданное значение в ячейку массива (матрицы) с координатами x, y */
+    public void setValue(int x, int y, int value){}
+
     public int getWidth() {
         return width;
     }
