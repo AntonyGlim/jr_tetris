@@ -3,6 +3,7 @@ package com.javarush.task.task22.task2213;
 import sun.font.FontRunIterator;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -110,16 +111,12 @@ public class Field {
     public void removeFullLines() {
         //Создаем список для хранения линий
         List<int[]> list = new ArrayList<>();
+        int[] fullOfOne = new int[width];
+        Arrays.fill(fullOfOne, 1);
 
         //Копируем все непустые линии в список.
         for (int i = 0; i < height; i++) {
-            boolean allSymbolsIsOne = true;
-            for (int j = 0; j < width && allSymbolsIsOne; j++) {
-                if (matrix[i][j] == 0){
-                    allSymbolsIsOne = false;
-                }
-            }
-            if (allSymbolsIsOne){
+            if (!(Arrays.equals(matrix[i], fullOfOne))){
                 list.add(matrix[i]);
             }
         }
