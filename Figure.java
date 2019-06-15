@@ -29,16 +29,36 @@ public class Figure {
     }
 
     /** для движения фигурки влево */
-    public void left(){}
+    public void left(){
+        x = x - 1;
+        if (!isCurrentPositionAvailable()){
+            x = x + 1;
+        }
+    }
 
     /** для движения фигурки вправо */
-    public void right(){}
+    public void right(){
+        x = x + 1;
+        if (!isCurrentPositionAvailable()){
+            x = x - 1;
+        }
+    }
 
     /** для движения фигурки вправо */
-    public void down(){}
+    public void down(){
+        y = y + 1;
+        if (!isCurrentPositionAvailable()){
+            y = y - 1;
+        }
+    }
 
     /** для движения фигурки вверх */
-    public void up(){}
+    public void up(){
+        y = y - 1;
+        if (!isCurrentPositionAvailable()){
+            y = y + 1;
+        }
+    }
 
     /** для поворота фигурки вокруг главной диагонали */
     public void rotate(){}
